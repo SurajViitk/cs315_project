@@ -1,0 +1,25 @@
+https://stackoverflow.com/questions/1720244/create-new-user-in-mysql-and-give-it-full-access-to-one-database
+
+CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';
+GRANT ALL ON my_db.* TO 'new_user'@'localhost';
+
+
+CREATE USER 'cs315'@'localhost' identified by 'passwd';
+create database cs315_project;
+GRANT ALL ON cs315_project.* TO 'cs315'@'localhost';
+	//first create database
+sudo mysql -u cs315 -p cs315_project < DBMS_project.sql
+	//enter password
+
+
+data
+
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number) values ("kalyanpur PS", "UP", "kanpur", "Kanpur", 7373737373);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number) values ("Vkas Nagar", "UP", "kanpur", "Kanpur", 7373737373);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number) values ("Indra Nagar", "Haryana", "Hisar", "Hisar", 7373737370);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number) values ("Badshah Nagar", "UP", "Lucknow", "LKO", 7373737371);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number)values ("Chowk", "UP", "kanpur", "Kanpur C", 7373737371);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number)values ("Metro", "UP", "kanpur", "Kanpur A", 7777737371);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number)values ("Kitlau", "UP", "kanpur", "Kanpur S", 7373737371);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number)values ("Rajajipur", "Haryana", "Hisar", "Hisar B", 7373737371);
+insert into Police_Station (Police_Station_Name,State, District, City,Phone_Number)values ("GD road", "New Delhi", "North Delhi", "Connaught", 7373737371);
